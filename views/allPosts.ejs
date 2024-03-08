@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+<div class="boxes">
+    <% for(let i=0; i<data.length; i++){ %>
+   <div class="container">
+    
+    <h1> <%= data[i].name %></h1>
+    <div class="line"></div>
+    <div class="author">
+        <p>Written by <h3><%= data[i].author %></h3></p>
+    </div>
+   
+    <p> <%= data[i].content %> </p>
+   </div>
+    <% } %>
+</div>
+<%- include("partials/footer.ejs") %>

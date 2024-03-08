@@ -1,0 +1,27 @@
+
+
+    <%- include("partials/header.ejs") %>
+
+
+    <div class="createForm">
+       <form action="/updatepopup" method="post">
+    
+        <label for="title">Title: 
+            <input type="text"  class="input1" id="title" placeholder="Add title here"  name="updatedTitle">
+        </label> <br>
+        <label for="id">  Id:  <input readonly type="number"  class="input1" id="id"  name="updatedId" value="<%= updateId %>"  >
+        </label> <br> 
+        <label for="id"> Author :  <input  type="text"  class="input1" id="author" placeholder="enter author name here"  name="updatedAuthor">
+        </label> <br> <br>
+        <label for="content"> Content: 
+            <textarea id="content" class="input2" name="updatedContent" placeholder="Add content here"> </textarea>
+            
+        </label> <br>
+        <button class="createButton" id="myForm" type="submit" >Create</button>
+       </form>
+    
+    </div>
+    
+ 
+
+<%- include("partials/footer.ejs") %>

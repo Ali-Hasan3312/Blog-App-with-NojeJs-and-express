@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<div class="delContainer">
+    <form action="/update" method="post">
+        <label for="options">Select Id To Update Post:</label>
+        <select id="options" name="updateId">
+            <% for(let i=0; i<data.length; i++){ %>
+          <option ><%= data[i].id %></option>
+            <% } %>
+        </select>
+        
+    <button type="submit" class="delBtn">Search</button>
+</form>
+</div>
+
+<%- include("partials/footer.ejs") %>

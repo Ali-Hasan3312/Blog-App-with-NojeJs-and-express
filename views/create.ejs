@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="createForm">
+   <form action="/create" method="post">
+
+    <label for="title">Title: 
+        <input type="text"  class="input1" id="title" placeholder="Add title here"  name="title">
+    </label> <br>
+    <label for="id">  Id:  <input type="number"  class="input1" id="id" placeholder="id in digits only"  name="id">
+    </label> <br> 
+    <label for="id"> Author :  <input type="text"  class="input1" id="author" placeholder="enter author name here"  name="author">
+    </label> <br> <br>
+    <label for="content"> Content: 
+        <textarea id="content" class="input2" name="content" placeholder="Add content here"> </textarea>
+        
+    </label> <br>
+    <button class="createButton" id="myForm" type="submit" >Create</button>
+   </form>
+
+</div>
+
+<%- include("partials/footer.ejs") %>

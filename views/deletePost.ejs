@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<div class="delContainer">
+    <form action="/delete" method="post">
+        <label for="options">Select Id To Delete Post:</label>
+        <select id="options" name="delete">
+            <% for(let i=0; i<data.length; i++){ %>
+          <option aria-placeholder="Select id to delete"><%= data[i].id %></option>
+            <% } %>
+        </select>
+        
+    <button type="submit" class="delBtn">Delete</button>
+</form>
+</div>
+
+<%- include("partials/footer.ejs") %>
